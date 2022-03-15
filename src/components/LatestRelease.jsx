@@ -7,11 +7,11 @@ const LatestRelease = ()=>{
     return(
         <Container >
         <Row  className="justify-content-center" >
-          <Col md={6}>
+        {books.map((book)=>(
+          <Col md={3}>
               
-              <Card >
 
-                  {books.map((book)=>(
+                  
                     <Card className="mt-3">  
                   <Card.Img variant="top" src={book.img}  />
     <Card.Body>
@@ -25,11 +25,11 @@ const LatestRelease = ()=>{
      
     </ListGroup>
    
-    </Card>))}
+    </Card> </Col> ))}
 
     
-  </Card>
-  </Col>
+  
+ 
         </Row>
       </Container>
     )
