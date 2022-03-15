@@ -1,22 +1,15 @@
-import { Container, Row, Col, Jumbotron, Button } from "react-bootstrap";
+import { Jumbotron,Button } from "react-bootstrap"
 
-const WellcomePart = ()=>{
-    return(
-    <Container className="mt-2 " fluid>
-        <Row className="justify-content-center">
-          <Col md={6}>
-          <Jumbotron>
-      <h3>WellCome To your StriveBooks!</h3>
-      <p>
-        You will find variety of your favorite books by just a CLICK!
-      </p>
-      <p>
-        <Button variant="primary">Click to FIND</Button>
-      </p>
-    </Jumbotron>
-          
-          </Col>
-        </Row>
-      </Container>)
-}
-    export default WellcomePart
+const WellcomePart = (props)=>(
+    <Jumbotron>
+  <h1>Hello, world!</h1>
+  <p>
+    This is a simple hero unit, a simple jumbotron-style component for calling
+    extra attention to featured content or information.
+  </p>
+  <p>
+    <Button onClick={props.clickFunction} variant="primary">Learn more</Button>
+  </p>
+</Jumbotron>
+)
+export default WellcomePart

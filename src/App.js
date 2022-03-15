@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
      < MyNavbar/>
-     <WellcomePart/>
+     <WellcomePart clickFunction={()=>alert("wellcome")}/>
      <LatestRelease/>
       <MyFooter/>
     </div>
